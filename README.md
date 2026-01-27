@@ -31,7 +31,7 @@ cast keccak "hello"
 #### Sign the message
 
 ```bash
-cast wallet sign --no-hash --accpunt <name-of-your-keystore> <bytes-output>
+cast wallet sign --no-hash --account <name-of-your-keystore> <bytes-output>
 ```
 
 #### Get your public key
