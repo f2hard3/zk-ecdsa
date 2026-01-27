@@ -1,0 +1,8 @@
+[package]
+name = "zk_ecdsa"
+type = "bin"
+authors = ["f2hard3"]
+
+[dependencies]
+array_helpers = { tag = "v0.30.2", git = "https://github.com/colinnielsen/noir-array-helpers" }
+ecrecover = { tag = "v1.0.0", git = "https://github.com/colinnielsen/ecrecover-noir" }
