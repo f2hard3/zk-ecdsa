@@ -80,11 +80,11 @@ nargo execute
 ### 5. Create the proof
 
 ```bash
-bb prove -b ./target/circuits.json -w ./target/circuits.gz -o ./target
+bb prove -b ./target/zk-ecdsa.json -w ./target/zk-ecdsa.gz -o ./target
 ```
 
 ```bash
-bb prove --oracle_hash keccak -b ./target/circuits.json -w ./target/circuits.gz -o ./target
+bb prove --oracle_hash keccak -b ./target/zk-ecdsa.json -w ./target/zk-ecdsa.gz -o ./target
 ```
 
 ### 6. Create the verification key
@@ -92,13 +92,13 @@ bb prove --oracle_hash keccak -b ./target/circuits.json -w ./target/circuits.gz 
 #### 6.(a) For off-chain verification
 
 ```bash
-bb write_vk -b ./target/circuits.json -o ./target
+bb write_vk -b ./target/zk-ecdsa.json -o ./target
 ```
 
 #### 6.(b) For an on-chain verifier contract
 
 ```bash
-bb write_vk --oracle_hash keccak -b ./target/circuits.json -o ./target
+bb write_vk --oracle_hash keccak -b ./target/zk-ecdsa.json -o ./target
 ```
 
 ### 7. Verification
